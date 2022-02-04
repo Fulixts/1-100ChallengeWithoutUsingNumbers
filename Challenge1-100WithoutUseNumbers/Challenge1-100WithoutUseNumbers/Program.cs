@@ -22,19 +22,13 @@ namespace Challenge1_100WithoutUseNumbers
 
             var x = "";
             var z = x.Length;
-            var first = true;
 
             z++;
-
-            if (first)
+            x = z.ToString() + x.Length.ToString() + x.Length.ToString();
+            while (z <= int.Parse(x))
             {
-                x = z.ToString() + x.Length.ToString() + x.Length.ToString();
-                first = false;
-                while (z <= int.Parse(x))
-                {
-                    Console.WriteLine(z);
-                    z++;
-                }
+                Console.WriteLine(z);
+                z++;
             }
         }
     }
